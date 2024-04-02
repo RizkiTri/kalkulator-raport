@@ -126,7 +126,7 @@ input {
     
 }
 
-@media (min-width: 450px){
+@media (min-width: 768px){
   .section {
     display: flex;
     justify-content: center;
