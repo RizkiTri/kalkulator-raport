@@ -126,6 +126,20 @@ input {
     
 }
 
+@media (min-width: 450px){
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  header{
+    font-size: 30px;
+  }
+}
+
 ::placeholder {
    text-align: center; 
 }
