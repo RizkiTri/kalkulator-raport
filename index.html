@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>KALKULATOR NILAI RAPOR</title>
+</head>
+<body>
+    <nav>
+        
+        <strong><a href="https://github.com/RizkiTri">Kalkulator Nilai Rapor</a></strong>
+    </nav>
+    
+    <header>
+        <h4>Selamat Datang Di Website Simulasi Perhitungan Nilai Gabungan Rerata Rapot, Akreditasi, dan Indeks Sekolah</h4>
+        <h4>Untuk Persiapan PPDB SMA/SMKN Prov. Jatim Jalur Nilai Akademik Tahun 2024</h4>
+    </header>
+    
+    <div class="section">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">NO.</th>
+                    <th rowspan="2">SEMESTER</th>
+                    <th colspan="7">MATA PELAJARAN</th>
+                </tr>
+                <tr>
+                    <th>Pend Agama</th>
+                    <th>PPKN</th>
+                    <th>B. Indonesia</th>
+                    <th>Matematika</th>
+                    <th>IPA</th>
+                    <th>IPS</th>
+                    <th>B. Inggris</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Semester 1</td>
+                    <td><input type="text" id="s1a" placeholder="-" minlength="1" maxlength="2" oninput="ragama(this);"></td>
+                    <td><input type="text" id="s1p" placeholder="-" minlength="1" maxlength="2" oninput="rpkn(this);"></td>
+                    <td><input type="text" id="s1i" placeholder="-" minlength="1" maxlength="2" oninput="rindo(this);"></td>
+                    <td><input type="text" id="s1m" placeholder="-" minlength="1" maxlength="2" oninput="rmat(this);"></td>
+                    <td><input type="text" id="s1b" placeholder="-" minlength="1" maxlength="2" oninput="ripa(this);"></td>
+                    <td><input type="text" id="s1s" placeholder="-" minlength="1" maxlength="2" oninput="rips(this);"></td>
+                    <td><input type="text" id="s1e" placeholder="-" minlength="1" maxlength="2" oninput="ringgris(this);"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Semester 2</td>
+                    <td><input type="text" id="s2a" placeholder="-" minlength="1" maxlength="2" oninput="ragama(this);"></td>
+                    <td><input type="text" id="s2p" placeholder="-" minlength="1" maxlength="2" oninput="rpkn(this);"></td>
+                    <td><input type="text" id="s2i" placeholder="-" minlength="1" maxlength="2" oninput="rindo(this);"></td>
+                    <td><input type="text" id="s2m" placeholder="-" minlength="1" maxlength="2" oninput="rmat(this);"></td>
+                    <td><input type="text" id="s2b" placeholder="-" minlength="1" maxlength="2" oninput="ripa(this);"></td>
+                    <td><input type="text" id="s2s" placeholder="-" minlength="1" maxlength="2" oninput="rips(this);"></td>
+                    <td><input type="text" id="s2e" placeholder="-" minlength="1" maxlength="2" oninput="ringgris(this);"></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Semester 3</td>
+                    <td><input type="text" id="s3a" placeholder="-" minlength="1" maxlength="2" oninput="ragama(this);"></td>
+                    <td><input type="text" id="s3p" placeholder="-" minlength="1" maxlength="2" oninput="rpkn(this);"></td>
+                    <td><input type="text" id="s3i" placeholder="-" minlength="1" maxlength="2" oninput="rindo(this);"></td>
+                    <td><input type="text" id="s3m" placeholder="-" minlength="1" maxlength="2" oninput="rmat(this);"></td>
+                    <td><input type="text" id="s3b" placeholder="-" minlength="1" maxlength="2" oninput="ripa(this);"></td>
+                    <td><input type="text" id="s3s" placeholder="-" minlength="1" maxlength="2" oninput="rips(this);"></td>
+                    <td><input type="text" id="s3e" placeholder="-" minlength="1" maxlength="2" oninput="ringgris(this);"></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Semester 4</td>
+                    <td><input type="text" id="s4a" placeholder="-" minlength="1" maxlength="2" oninput="ragama(this);"></td>
+                    <td><input type="text" id="s4p" placeholder="-" minlength="1" maxlength="2" oninput="rpkn(this);"></td>
+                    <td><input type="text" id="s4i" placeholder="-" minlength="1" maxlength="2" oninput="rindo(this);"></td>
+                    <td><input type="text" id="s4m" placeholder="-" minlength="1" maxlength="2" oninput="rmat(this);"></td>
+                    <td><input type="text" id="s4b" placeholder="-" minlength="1" maxlength="2" oninput="ripa(this);"></td>
+                    <td><input type="text" id="s4s" placeholder="-" minlength="1" maxlength="2" oninput="rips(this);"></td>
+                    <td><input type="text" id="s4e" placeholder="-" minlength="1" maxlength="2" oninput="ringgris(this);"></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Semester 5</td>
+                    <td><input type="text" id="s5a" placeholder="-" minlength="1" maxlength="2" oninput="ragama(this);"></td>
+                    <td><input type="text" id="s5p" placeholder="-" minlength="1" maxlength="2" oninput="rpkn(this);"></td>
+                    <td><input type="text" id="s5i" placeholder="-" minlength="1" maxlength="2" oninput="rindo(this);"></td>
+                    <td><input type="text" id="s5m" placeholder="-" minlength="1" maxlength="2" oninput="rmat(this);"></td>
+                    <td><input type="text" id="s5b" placeholder="-" minlength="1" maxlength="2" oninput="ripa(this);"></td>
+                    <td><input type="text" id="s5s" placeholder="-" minlength="1" maxlength="2" oninput="rips(this);"></td>
+                    <td><input type="text" id="s5e" placeholder="-" minlength="1" maxlength="2" oninput="ringgris(this);"></td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td colspan="2"> Jumlah Nilai Mapel</td>
+                    <td><span id="nilaia" class="nilai">-</span></td>
+                    <td><span id="nilaip" class="nilai">-</span></td>
+                    <td><span id="nilaii" class="nilai">-</span></td>
+                    <td><span id="nilaim" class="nilai">-</span></td>
+                    <td><span id="nilaib" class="nilai">-</span></td>
+                    <td><span id="nilais" class="nilai">-</span></td>
+                    <td><span id="nilaie" class="nilai">-</span></td>
+                    
+                </tr>
+                <tr style="height: 50px;">
+                    <td colspan="2"> Rerata Nilai Mapel</td>
+                    <td><span id="rerataa" class="rerata">-</span></td>
+                    <td><span id="reratap" class="rerata">-</span></td>
+                    <td><span id="reratai" class="rerata">-</span></td>
+                    <td><span id="reratam" class="rerata">-</span></td>
+                    <td><span id="reratab" class="rerata">-</span></td>
+                    <td><span id="reratas" class="rerata">-</span></td>
+                    <td><span id="reratae" class="rerata">-</span></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align: right; padding-right: 5px; font-size: 20px; "> Jumlah Rata Rata Nilai Rapor Semester 1 - Semester 5</td>
+                    <td colspan="3" ><span class="jml" id="jml">-</span></td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align: right; padding-right: 5px; font-size: 20px; "> Nilai Akreditasi Sekolah</td>
+                    <td colspan="3"><input type="text" style="height: 25px" placeholder="-" id="akred" minlength="1" maxlength="2" oninput="akhir()"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align: right; padding-right: 5px; font-size: 20px; "> Nilai Indeks Sekolah</td>
+                    <td colspan="3"><input type="text" style="height: 25px" placeholder="-" id="indeks" minlength="1" maxlength="2" oninput="akhir()"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align: right; padding-right: 5px; font-size: 20px; "> Nilai Gabungan Antara Indeks Akreditasi dan Nilai Raport</td>
+                    <td colspan="3"><span class="rsl" id="rsl">-</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
+    
+    
+    <script src="script/main.js"></script>
+    <script src="script/final.js"></script>
+</body>
+</html>
