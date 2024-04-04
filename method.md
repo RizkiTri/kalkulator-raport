@@ -1,7 +1,5 @@
 # METHODE PENGHITUNGAN RATA RATA NILAI RAPORT
 
----
-
 Hai semuanya 👋
 
 Di sini saya akan menjelaskan beberapa metode perhitungan nilai rapot yang saya temukan baru - baru ini. 
