@@ -97,42 +97,60 @@ metode tersbeut.
 
 1. Metode membulatkan hasil akhir rerata seluruh mapel \
 Metode ini sendir cukup umum digunaka dimana kita membulatkan 2 angka di belakang koma untuk memudahkan dalam membaca hasil rerata sekarang mari kita coba metode tersebut.
-   - pertama saya isi nilai
+   - pertama saya isi nilai \
         ```js
         nilai() // Mengisi kan nilai ke dalam field
         ```
-   - saya memastikan bahwa nilai sudah di bulatkan
+   - saya memastikan bahwa nilai sudah di bulatkan \
         ```js
         // Rerata per mapel
         document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7).toFixed(2)
-        ```
-        ```js
+        
         // Rerata akhir
         var itung = (indeks * 3/10) + (akred * 1 / 5) + (rerata * 1/2)
         document.getElementById("rsl").innerHTML = itung.toFixed(2)
         ```
-   - Saya memasukkan nilai indeks dan akred
+   - Saya memasukkan nilai indeks dan akred \
         Saya memasukkan nilai indeks 85.42 dan akreditasi 91
-   - Hasil 
+   - Hasil \
         Setalah di hitung retata yang di dapatkan ialah ``88.67``
 
 2. Metode tanpa membulatkan hasil akhir rerata seluruh mapel \
 Metode ini sendir jarang digunakan karena membuat angka jadi sulit di baca dan juga sulit di hitung, maka dari itu mari kita coba metode ini
-   - pertama saya isi nilai
+   - pertama saya isi nilai \
         ```js
         nilai() // Mengisi kan nilai ke dalam field
         ```
-   - saya memastikan bahwa nilai tidak akan dibulatkan 
+   - saya memastikan bahwa nilai tidak akan dibulatkan \
         ```js
         // Rerata per mapel
         document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7)
-        ```
-        ```js
+        
         // Rerata akhir
         var itung = (indeks * 3/10) + (akred * 1 / 5) + (rerata * 1/2)
         document.getElementById("rsl").innerHTML = itung
         ```
-   - Saya memasukkan nilai indeks dan akred
+   - Saya memasukkan nilai indeks dan akred \
         Saya memasukkan nilai indeks 85.42 dan akreditasi 91
-   - Hasil 
-        Setalah di hitung retata yang di dapatkan ialah ``88.86885714285714``
+   - Hasil \
+        Setalah di hitung retata yang di dapatkan ialah ``88.66885714285714``
+
+3. Metode tanpa membulatkan dan mengambil digit akhir \
+Metode ini bisa di bilang hampir sama seekali tidak pernah di gunakan karena tidak sesuai dengan kaidah pengerjaan matematika, kemungkinan besar metode ini tidak akan dipakai 
+   - pertama saya isi nilai \
+        ```js
+        nilai() // Mengisi kan nilai ke dalam field
+        ```
+   - saya memastikan bahwa nilai tidak akan dibulatkan \
+        ```js
+        // Rerata per mapel
+        document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7).slice(0,5)
+        
+        // Rerata akhir
+        var itung = (indeks * 3/10) + (akred * 1 / 5) + (rerata * 1/2).slice(0,5)
+        document.getElementById("rsl").innerHTML = itung
+        ```
+   - Saya memasukkan nilai indeks dan akred \
+        Saya memasukkan nilai indeks 85.42 dan akreditasi 91
+   - Hasil \
+        Setalah di hitung retata yang di dapatkan ialah ``88.66`` catatan: rerata tersebut juga di potong 2 angka 

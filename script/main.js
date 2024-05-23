@@ -256,9 +256,11 @@ function rerata(){
         
         
         if(yu.length === 7){
-            document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7).toString().slice(0, 5 )
-        }
+            document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7).toFixed(2)
         
+            x = (yu.reduce((a,b) => a + b , 0) / 7)
+        }
+     
         if(yu.length > 7) {
             console.log("cleared")
             yu = [];
@@ -271,8 +273,9 @@ function rerata(){
                 parseFloat(document.getElementById("reratas").innerHTML),
                 parseFloat(document.getElementById("reratae").innerHTML)
             )
-            document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7).toString().slice(0, 5 )
+            document.getElementById("jml").innerHTML =  (yu.reduce((a,b) => a + b , 0) / 7).toFixed(2)
             
+            x = (yu.reduce((a,b) => a + b , 0) / 7)
         }
     }
     akhir();
